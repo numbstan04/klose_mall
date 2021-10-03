@@ -171,10 +171,7 @@
   </select>
 
   <select id="selectQuestionByUsername" resultType="string" parameterType="string">
-    select
-    question
-    from mmall_user
-    where username = #{usrename}
+    select question from mmall_user where username = #{usrename}
   </select>
 
   <select id="checkAnswer" resultType="int" parameterType="map">
